@@ -3,6 +3,7 @@
 from settings import *
 
 DEBUG = False
+MASTER_HELIOS = True
 SECRET_KEY = '0123456789abcdef01234567891bcdef'
 ALLOWED_HOSTS = ['127.0.0.1', 'lkrv.fri.uni-lj.si']
 URL_HOST = 'https://lkrv.fri.uni-lj.si'
@@ -25,3 +26,5 @@ DEFAULT_FROM_NAME = get_from_env('DEFAULT_FROM_NAME', 'Helios at lkrv.fri.uni-lj
 SERVER_EMAIL = '%s <%s>' % (DEFAULT_FROM_NAME, DEFAULT_FROM_EMAIL)
 EMAIL_HOST = '212.235.188.18'
 EMAIL_PORT = 25
+LANGUAGE_CODE = 'sl'
+LOCALE_PATHS = ('/var/evolitve-helios/locale', )
